@@ -91,7 +91,6 @@ public class Lab2Test {
     @Order(6)
     @DisplayName("6. Проверка заголовка открывшейся статьи")
     void testArticleHeading() {
-        // Переходим сразу на страницу статьи для независимости теста
         driver.get("https://ru.wikipedia.org/wiki/Java");
         WebElement heading = driver.findElement(By.id("firstHeading"));
         assertTrue(heading.isDisplayed());
